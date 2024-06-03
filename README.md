@@ -15,3 +15,23 @@
 2. Προσθέστε την ακόλουθη γραμμή στο αρχείο `server.cfg` για να ξεκινάει το script με το server:
    ```plaintext
    ensure my-teleport-script
+
+## Χρήση
+Για να ανοίξετε το μενού τηλεμεταφοράς, χρησιμοποιήστε την ακόλουθη εντολή στο παιχνίδι
+/openmenu
+
+## Δομή Αρχείων
+my-teleport-script/
+├── client.lua
+├── server.lua
+├── fxmanifest.lua
+└── nui/
+    └── index.html
+
+'git checkout -b feature/YourFeature'
+'git commit -m 'Add some feature'
+'git push origin feature/YourFeature'
+
+
+Άδεια Χρήσης
+Αυτό το project είναι υπό την MIT Άδεια Χρήσης.
