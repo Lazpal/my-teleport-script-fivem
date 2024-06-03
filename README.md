@@ -28,7 +28,7 @@ my-teleport-script/
 └── nui/
     └── index.html
 
-##Άδεια Χρήσης
+## Άδεια Χρήσης
 Αυτό το project είναι υπό την MIT Άδεια Χρήσης. 
 
 ##
