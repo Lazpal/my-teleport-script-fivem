@@ -1,0 +1,31 @@
+<!-- Path: resources/my-teleport-script/html/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teleport UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="notification" class="hidden">
+        <div id="container">
+            <h1>Teleport Menu</h1>
+            <button id="showLocationsButton">Show Locations</button>
+            <button id="saveLocationButton">Save Location</button>
+            <div id="locationsList" class="hidden">
+                <select id="locationSelect"></select>
+                <button id="teleportButton">Teleport</button>
+            </div>
+            <button id="teleportSavedButton">Teleport to Saved Location</button>
+            <button id="closeButton">Close</button>
+        </div>
+    </div>
+    <div id="confirmation" class="hidden">
+        <p>Are you sure you want to teleport?</p>
+        <button id="confirmTeleportButton">Yes</button>
+        <button id="cancelTeleportButton">No</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
