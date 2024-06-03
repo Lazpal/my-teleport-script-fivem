@@ -28,9 +28,9 @@ my-teleport-script/
 └── nui/
     └── index.html
 
-'git checkout -b feature/YourFeature'
-'git commit -m 'Add some feature'
-'git push origin feature/YourFeature'
+git checkout -b feature/YourFeature
+git commit -m 'Add some feature
+git push origin feature/YourFeature
 
 
 Άδεια Χρήσης
