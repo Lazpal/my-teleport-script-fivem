@@ -28,10 +28,5 @@ my-teleport-script/
 └── nui/
     └── index.html
 
-git checkout -b feature/YourFeature
-git commit -m 'Add some feature
-git push origin feature/YourFeature
-
-
 Άδεια Χρήσης
-Αυτό το project είναι υπό την MIT Άδεια Χρήσης.
+Αυτό το project είναι υπό την MIT Άδεια Χρήσης. 
