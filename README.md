@@ -30,3 +30,8 @@ my-teleport-script/
 
 Άδεια Χρήσης
 Αυτό το project είναι υπό την MIT Άδεια Χρήσης. 
+
+
+author 'lazpal'
+description 'Enhanced teleport script with save location and location list UI for QBCore'
+version '1.6.0'
