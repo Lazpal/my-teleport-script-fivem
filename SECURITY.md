@@ -1,4 +1,5 @@
 # Security Policy
+This project is under the MIT License.
 # Άδεια Χρήσης
 Αυτό το project είναι υπό την MIT Άδεια Χρήσης.
 ## Supported Versions
