@@ -28,11 +28,15 @@
 
 ## Δομή Αρχείων
 my-teleport-script/
-├── client.lua
-├── server.lua
-├── fxmanifest.lua
-└── nui/
-    └── index.html
+   ├── client.lua
+   ├── server.lua
+   ├── fxmanifest.lua
+   └── nui/
+      └── index.html
+      └── script.js
+      └── style.css
+      
+      
 
 ## Άδεια Χρήσης
 Αυτό το project είναι υπό την MIT Άδεια Χρήσης. 
