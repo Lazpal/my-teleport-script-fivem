@@ -4,6 +4,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#Copyright {
+    position: absolute;
+    left: 0;
+    color: rgb(105, 105, 105);
+    font-size: 12px;
+}
+
 #notification, #confirmation {
     position: fixed;
     top: 10px;
