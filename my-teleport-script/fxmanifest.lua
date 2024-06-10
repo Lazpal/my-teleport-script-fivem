@@ -5,7 +5,7 @@ game 'gta5'
 
 author 'lazpal'
 description 'Enhanced teleport script with save location and location list UI for QBCore'
-version '1.6.0'
+version '1.7.9'
 
 server_script 'server/teleport.lua'
 client_script 'client/teleport.lua'

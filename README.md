@@ -44,4 +44,4 @@ my-teleport-script/
 ##
 author 'lazpal'
 description 'Enhanced teleport script with save location and location list UI for QBCore'
-version '1.6.0'
+version '1.8.9'

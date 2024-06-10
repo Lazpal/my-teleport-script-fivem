@@ -8,27 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="notification" class="hidden">
-        <div id="container">
-            <h1>Teleport Menu</h1>
-            <button id="showLocationsButton">Show Locations</button>
-            <button id="saveLocationButton">Save Location</button>
-            <div id="locationsList" class="hidden">
-                <select id="locationSelect"></select>
-                <button id="teleportButton">Teleport</button>
-            </div>
-            <button id="teleportSavedButton">Teleport to Saved Location</button>
-            <button id="closeButton">Close</button>
-            <p id="Copyright">©lazpal</p>
+    <div id="menu" class="hidden">
+        <h1>Teleport Menu</h1>
+        <button id="showLocationsButton">Show Locations</button>
+        <input type="text" id="locationName" placeholder="Location Name">
+        <button id="saveLocationButton">Save Location</button>
+        <div id="locationsList" class="hidden">
+            <h2>Available Locations</h2>
+            <button id="teleportButton">Teleport</button>
+            <select id="locationSelect"></select>
+            <button id="deleteLocationButton">Delete Location</button>
+            <input type="text" id="searchLocationInput" placeholder="Search Locations">
         </div>
-    </div>
-    <div id="confirmation" class="hidden">
-        <p>Are you sure you want to teleport?</p>
-        <button id="confirmTeleportButton">Yes</button>
-        <button id="cancelTeleportButton">No</button>
-        <p id="Copyright">©lazpal</p>
+        <button id="closeButton">Close</button>
+        <div id="notification" class="hidden"></div>
+        <p id="copyright">© 2024 lazpal</p>
     </div>
     <script src="script.js"></script>
-    ©lazpal
 </body>
 </html>

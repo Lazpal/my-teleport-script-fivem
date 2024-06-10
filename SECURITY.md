@@ -12,3 +12,4 @@ currently being supported with security updates.
 | 1.6.0   | :ballot_box_with_check: |
 | 1.7.0   | :white_check_mark: |
 | 1.8.1   | :negative_squared_cross_mark: |
+| 1.8.9   | :negative_squared_cross_mark: |

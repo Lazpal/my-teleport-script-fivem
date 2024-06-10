@@ -1,47 +1,89 @@
 /* Path: resources/my-teleport-script/html/style.css */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-#Copyright {
-    position: absolute;
-    left: 0;
-    color: rgb(105, 105, 105);
-    font-size: 12px;
-}
-
-#notification, #confirmation {
+#menu {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 10%;
+    left: 10%;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
-    color: white;
-    z-index: 1000;
+    color: rgb(255, 255, 255);
     width: 300px;
-    opacity: 0.9;
+    z-index: 1000;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    opacity: 0;
+    transform: translateY(-20px);
 }
 
-#container, #confirmation {
-    text-align: center;
-}
-
-button, select {
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover, select:hover {
-    background-color: #0056b3;
+#menu.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .hidden {
     display: none;
+}
+
+button, select, input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#locationName {
+    width: 93%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 3px;
+    background-color: #268dfc;
+    color: black;
+}
+
+#searchLocationInput {
+    width: 93%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 3px;
+    background-color: #268dfc;
+    color: black;
+}
+
+button:hover, select:hover, input:hover {
+    background-color: #0056b3;
+}
+
+#notification {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.5s ease-out;
+}
+
+.notification.show {
+    opacity: 1;
+}
+
+.notification.fade-out {
+    opacity: 0;
+}
+
+#copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666666;
 }
