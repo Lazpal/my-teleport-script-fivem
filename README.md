@@ -5,10 +5,10 @@
 Αυτό το script παρέχει δυνατότητα τηλεμεταφοράς για παίκτες στο QBCore framework. Οι παίκτες μπορούν να χρησιμοποιήσουν το μενού για να επιλέξουν και να τηλεμεταφερθούν σε αποθηκευμένες τοποθεσίες.
 
 ## preview
-![Στιγμιότυπο οθόνης 2024-06-08 135646845134](https://github.com/Lazpal/my-teleport-script-lazpal-fivem-qb/assets/136169818/7ed8e253-3345-41f8-b1bc-de894c972db5)
 
-![Στιγμιότυπο οθόνης 2024-06-08 135031](https://github.com/Lazpal/my-teleport-script-lazpal-fivem-qb/assets/136169818/874276b7-e90f-43e0-bd50-37f6d3ba24b7)
+![Στιγμιότυπο οθόνης 2024-06-10 164446](https://github.com/Lazpal/my-teleport-script-lazpal-fivem-qb/assets/136169818/5b58aca8-7a08-4d93-bdb9-1074abdfb832)
 
+![Στιγμιότυπο οθόνης 2024-06-10 164539](https://github.com/Lazpal/my-teleport-script-lazpal-fivem-qb/assets/136169818/5f7a96c2-0906-4b7e-881f-430def1e95fc)
 
 ## Απαιτήσεις
 
