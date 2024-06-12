@@ -4,6 +4,8 @@ local locations = {
     { name = "Police Station", coords = vector3(425.1, -979.5, 30.7) },
     { name = "Hospital", coords = vector3(357.4, -593.4, 28.8) },
     { name = "Airport", coords = vector3(-1037.7, -2737.8, 20.1) },
+    --{ name = "backrooms", coords = vector3(403.05, -950.87, -99.0) },
+    { name = "Fib Top", coords = vector3(135.6, -749.16, 266.6) },
     -- Add more locations here
 }
 

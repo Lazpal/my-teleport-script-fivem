@@ -1,5 +1,3 @@
-// Path: resources/my-teleport-script/html/script.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const showLocationsButton = document.getElementById('showLocationsButton');
     const saveLocationButton = document.getElementById('saveLocationButton');
@@ -34,17 +32,20 @@ document.addEventListener('DOMContentLoaded', () => {
             body: JSON.stringify({})
         }).then(resp => resp.text()).then(text => {
             try {
-                const resp = JSON.parse(text);
-                locationSelect.innerHTML = '';
-                resp.locations.forEach(location => {
-                    const option = document.createElement('option');
-                    option.value = JSON.stringify(location.coords);
-                    option.textContent = location.name;
-                    locationSelect.appendChild(option);
-                });
+                if (text) {
+                    const resp = JSON.parse(text);
+                    locationSelect.innerHTML = '';
+                    resp.locations.forEach(location => {
+                        const option = document.createElement('option');
+                        option.value = JSON.stringify(location.coords);
+                        option.textContent = location.name;
+                        locationSelect.appendChild(option);
+                    });
+                } else {
+                    throw new Error('Empty response');
+                }
             } catch (error) {
-                console.error('Error parsing locations:', error);
-                showNotification('Error parsing locations!', false);
+                showNotification('Error parsing locations: ' + error.message, false);
             }
         }).catch(error => {
             console.error('Error fetching locations:', error);
@@ -68,10 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify({ name })
             }).then(resp => resp.text()).then(text => {
                 try {
-                    const resp = JSON.parse(text);
-                    console.log('Save response:', resp);
-                    showNotification('Location saved successfully!');
-                    fetchAndUpdateLocations();
+                    if (text) {
+                        const resp = JSON.parse(text);
+                        showNotification('Location saved successfully!');
+                        fetchAndUpdateLocations();
+                    } else {
+                        throw new Error('Empty response');
+                    }
                 } catch (error) {
                     console.error('Error parsing save response:', error);
                     showNotification('Error saving location!', false);
@@ -97,9 +101,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify({ coords })
             }).then(resp => resp.text()).then(text => {
                 try {
-                    const resp = JSON.parse(text);
-                    console.log('Teleport response:', resp);
-                    showNotification('Teleported successfully!');
+                    if (text) {
+                        const resp = JSON.parse(text);
+                        showNotification('Teleported successfully!');
+                    } else {
+                        throw new Error('Empty response');
+                    }
                 } catch (error) {
                     console.error('Error parsing teleport response:', error);
                     showNotification('Error teleporting!', false);
@@ -123,10 +130,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify({ name })
             }).then(resp => resp.text()).then(text => {
                 try {
-                    const resp = JSON.parse(text);
-                    console.log('Delete response:', resp);
-                    showNotification('Location deleted successfully!');
-                    fetchAndUpdateLocations();
+                    if (text) {
+                        const resp = JSON.parse(text);
+                        showNotification('Location deleted successfully!');
+                        fetchAndUpdateLocations();
+                    } else {
+                        throw new Error('Empty response');
+                    }
                 } catch (error) {
                     console.error('Error parsing delete response:', error);
                     showNotification('Error deleting location!', false);
