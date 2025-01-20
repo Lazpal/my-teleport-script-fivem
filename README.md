@@ -4,6 +4,7 @@
 
 Αυτό το script παρέχει δυνατότητα τηλεμεταφοράς για παίκτες στο QBCore framework. Οι παίκτες μπορούν να χρησιμοποιήσουν το μενού για να επιλέξουν και να τηλεμεταφερθούν σε αποθηκευμένες τοποθεσίες.
 (1.9.0)This is an enhanced teleport script for QBCore with animations and improved UI. It allows players to save, delete, and teleport to locations within the game.
+© 2025 LAZPAL
 
 ## Features
 
@@ -48,10 +49,10 @@ my-teleport-script/
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-© 2024 lazpal
-
+This project is licensed under the LAZPAL License - see the [LICENSE](LICENSE) file for details.
+----
+© 2025 LAZPAL
+----
 ##
 author 'lazpal'
 description 'Enhanced teleport script with save location and location list UI for QBCore'
